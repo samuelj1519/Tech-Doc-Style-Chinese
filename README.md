@@ -44,6 +44,8 @@
 - 避免机械直译 `Success`、`Invalid`、`Bad Request` 等英文状态词
 - 避免高频互联网黑话，如 `赋能`、`抓手`、`闭环`、`打通`
 - 对操作、排查和运维文档应用受控中文技术写作方法
+- 按文档用途设置标题、表头和信息顺序，明确职责与引用来源
+- 批量替换限定目标范围，文件改名后同步路径、链接与正文引用
 
 完整规范请阅读：
 
@@ -108,13 +110,13 @@ tech-doc-style-chinese/
 
 ```bash
 # 直接安装
-npx skills add https://github.com/Fenng/tech-doc-style-chinese
+npx skills add https://github.com/samuelj1519/Tech-Doc-Style-Chinese
 ```
 
 如需无交互并明确安装到全局 Codex，可使用：
 
 ```bash
-npx -y skills add https://github.com/Fenng/tech-doc-style-chinese -a codex -g
+npx -y skills add https://github.com/samuelj1519/Tech-Doc-Style-Chinese -a codex -g
 ```
 
 参数说明：
@@ -134,7 +136,7 @@ CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 
 git clone --depth 1 --branch <release-tag> \
-  https://github.com/Fenng/tech-doc-style-chinese.git \
+  https://github.com/samuelj1519/Tech-Doc-Style-Chinese.git \
   "$CODEX_HOME/skills/tech-doc-style-chinese"
 ```
 
@@ -175,7 +177,7 @@ Use $tech-doc-style-chinese to rewrite this Chinese technical copy.
 如果当前 Claude Code 环境支持安装 Skills，可让它读取本仓库并安装：
 
 ```text
-请安装这份 Skill：https://github.com/Fenng/tech-doc-style-chinese
+请安装这份 Skill：https://github.com/samuelj1519/Tech-Doc-Style-Chinese
 ```
 
 这种方式较省事，但具体装到项目级还是全局取决于 Claude Code 当时的能力与判断。团队协作或需要写进文档、CI 的场景，建议用下面的 npx 命令。
@@ -186,13 +188,13 @@ Use $tech-doc-style-chinese to rewrite this Chinese technical copy.
 
 ```bash
 # 安装到当前项目
-npx skills add https://github.com/Fenng/tech-doc-style-chinese -a claude-code
+npx skills add https://github.com/samuelj1519/Tech-Doc-Style-Chinese -a claude-code
 ```
 
 如需无交互并明确安装到全局 Claude Code，可使用：
 
 ```bash
-npx -y skills add https://github.com/Fenng/tech-doc-style-chinese -a claude-code -g
+npx -y skills add https://github.com/samuelj1519/Tech-Doc-Style-Chinese -a claude-code -g
 ```
 
 参数说明：
